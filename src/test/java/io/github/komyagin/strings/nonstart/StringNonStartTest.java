@@ -6,10 +6,11 @@ import static org.junit.Assert.assertEquals;
 
 public class StringNonStartTest {
 
+    //GIVEN
+    StringNonStart stringNonStart = new StringNonStart();
+
     @Test
     public void shouldReturnRightConcatenationFirstCase() {
-        //GIVEN
-        StringNonStart stringNonStart = new StringNonStart();
 
         //WHEN
         String expected = "ellohere";
@@ -21,8 +22,6 @@ public class StringNonStartTest {
 
     @Test
     public void shouldReturnRightConcatenationSecondCase() {
-        //GIVEN
-        StringNonStart stringNonStart = new StringNonStart();
 
         //WHEN
         String expected = "avaode";
@@ -34,8 +33,6 @@ public class StringNonStartTest {
 
     @Test
     public void shouldReturnRightConcatenationThirdCase() {
-        //GIVEN
-        StringNonStart stringNonStart = new StringNonStart();
 
         //WHEN
         String expected = "hotlava";
@@ -47,8 +44,6 @@ public class StringNonStartTest {
 
     @Test
     public void shouldReturnRightConcatenationFourthCase() {
-        //GIVEN
-        StringNonStart stringNonStart = new StringNonStart();
 
         //WHEN
         String expected = "by";
@@ -60,8 +55,6 @@ public class StringNonStartTest {
 
     @Test
     public void shouldReturnRightConcatenationFifthCase() {
-        //GIVEN
-        StringNonStart stringNonStart = new StringNonStart();
 
         //WHEN
         String expected = "b";
@@ -73,8 +66,6 @@ public class StringNonStartTest {
 
     @Test
     public void shouldReturnRightConcatenationSixthCase() {
-        //GIVEN
-        StringNonStart stringNonStart = new StringNonStart();
 
         //WHEN
         String expected = "c";
@@ -86,8 +77,6 @@ public class StringNonStartTest {
 
     @Test
     public void shouldReturnRightConcatenationSeventhCase() {
-        //GIVEN
-        StringNonStart stringNonStart = new StringNonStart();
 
         //WHEN
         String expected = "";
@@ -99,7 +88,6 @@ public class StringNonStartTest {
 
     @Test(expected = NullPointerException.class)
     public void shouldThrowNPE() {
-        StringNonStart stringNonStart = new StringNonStart();
 
         String expected = "ellohere";
         String actual = stringNonStart.nonStart(null, null);
