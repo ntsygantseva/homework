@@ -76,7 +76,7 @@ public class StringNonStartTest {
     }
 
     @Test
-    public void shouldReturnRightConcatenationSeventhCase() {
+    public void shouldReturnEmptyStringSeventhCase() {
 
         //WHEN
         String expected = "";
@@ -87,7 +87,7 @@ public class StringNonStartTest {
     }
 
     @Test(expected = NullPointerException.class)
-    public void shouldThrowNPE() {
+    public void shouldThrowNPEWhenArgumentsAreNull() {
 
         String expected = "ellohere";
         String actual = stringNonStart.nonStart(null, null);

@@ -98,7 +98,7 @@ public class StringBobThereTest {
     }
 
     @Test(expected = NullPointerException.class)
-    public void shouldThrowNPE() {
+    public void shouldThrowNPEWhenArgumentIsNull() {
 
         //WHEN
         boolean expected = true;
