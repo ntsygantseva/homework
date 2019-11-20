@@ -6,8 +6,12 @@ public class ArraysLuckyThirteen {
         boolean hasOne = false;
         boolean hasThree = false;
         for (int i = 0; i < nums.length; i++) {
-            if(nums[i] == 1) hasOne = true;
-            if(nums[i] == 3) hasThree = true;
+            if (nums[i] == 1) {
+                hasOne = true;
+            }
+            if (nums[i] == 3) {
+                hasThree = true;
+            }
         }
         return !hasOne && !hasThree;
     }
