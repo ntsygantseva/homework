@@ -75,6 +75,17 @@ public class StringRepeatFrontTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void shouldReturnEmptyStringWhenArgumentIsNegative() {
+
+        //WHEN
+        String expected = "";
+        String actual = stringRepeatFront.repeatFront("adfasdfasdf", -5);
+
+        //THEN
+        assertEquals(expected, actual);
+    }
+
     @Test(expected = NullPointerException.class)
     public void shouldThrowNPEWhenArgumentIsNull() {
 
